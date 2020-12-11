@@ -69,3 +69,38 @@ const ellie3 = ellie1;
 console.log(ellie1 == ellie2);
 console.log(ellie1 === ellie2);
 console.log(ellie1 === ellie3);
+
+const name = 'df';
+if (name === 'ellie') {
+    console.log('Welcome, Ellie!');
+} else if (name === 'coder') {
+    console.log('You are amazing coder');
+} else {
+    console.log('unknown');
+}
+
+// condition ? value1 : value2;
+console.log(name === 'ellie' ? 'yes' : 'no');
+
+const browser = 'IE';
+
+// use for multiple type checks in TS
+switch (browser) {
+    case 'IE':
+        console.log('go away!');
+        break;
+    case 'Chrome':
+        console/log('love you!');
+    case 'Firefox':
+        console.log('love you!');
+    default:
+        console.log('same all!');
+        break;
+}
+
+// loops
+let i = 3;
+while (i > 0) {
+    console.log(`while: ${i}`);
+    i--;
+}
