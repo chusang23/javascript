@@ -104,3 +104,24 @@ while (i > 0) {
     console.log(`while: ${i}`);
     i--;
 }
+
+do {
+    console.log(`do while: ${i}`);
+    i--;
+} while (i > 0);
+
+for (i = 3; i > 0; i--) {
+    console.log(`for: ${i}`);
+}
+
+//for loop, for(begin; condition; step)
+for (let i = 3; i > 0; i = i - 2) {
+    console.log(`inline variable for: ${i}`);
+}
+
+//nested loops
+for (let i = 0; i < 10; i++ ) {
+    for(let j = 0; j < 10; j++) {
+        console.log(`i: ${i}, j:${j}`);
+    }
+}
