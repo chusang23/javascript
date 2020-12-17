@@ -36,7 +36,7 @@
 
      get age() {
          return this._age;
-     }
+     }.
 
      set age(value) {
          // if (value < 0) {
