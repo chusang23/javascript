@@ -89,10 +89,17 @@ class Shape {
     getArea() {
         return this.width * this.height;
     }
+
+    toString() {
+        return `Triangle: color: ${this.color}`
+    }
 }
 
 class Rectangle extends Shape {}
 class Triangle extends Shape {
+    draw() {
+        super.draw();
+    }
     getArea() {
         return (this.width * this.height) / 2;
     }
@@ -104,3 +111,10 @@ console.log(rectangle.getArea());
 const triangle = new Triangle(20, 20, 'red');
 triangle.draw();
 console.log(triangle.getArea());
+
+console.log(rectangle instanceof Rectangle);
+console.log(triangle instanceof Rectangle);
+console.log(triangle instanceof Triangle);
+console.log(triangle instanceof Shape);
+console.log(triangle instanceof Object);
+console.log(triangle.toString());
