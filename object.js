@@ -40,3 +40,7 @@ function Person(name, age) {
     this.name = name;
     this.age = age;
 }
+
+console.log('name' in ellie);
+console.log('age' in ellie);
+console.log('random' in ellie);
