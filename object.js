@@ -44,3 +44,36 @@ function Person(name, age) {
 console.log('name' in ellie);
 console.log('age' in ellie);
 console.log('random' in ellie);
+console.log(ellie.random);
+
+//6. for..in vs for..of
+//for (key in obj)
+console.clear();
+for(key in ellie) {
+    console.log(key);
+}
+
+//for(value of iterable)
+const array = [1, 2, 4, 5];
+for(value of array) {
+    console.log(value);
+}
+
+// 7. Fun cloning
+
+const user = {name: 'ellie', age: '20'};
+const user2 = user;
+user2.name = 'coder';
+console.log(user);
+
+// old way
+const user3 = {};
+for ( key in user) {
+    user3[key] = user[key];
+}
+console.clear();
+console.log(user3);
+
+const user4 = {};
+Object.assign(user4, user);
+console.log(user4);
